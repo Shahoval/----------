@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <title>Форма відправлення електронної пошти</title>
+</head>
+<body>
+  <h1 align="center">Форма відправлення електронної пошти</h1>
+  <form action="mailto:recipient@example.com" method="post" enctype="text/plain">
+    <table border="2" align="center" cellspacing="1" cellpadding="2" bgcolor="#FFFFE0">
+      <tr>
+        <td><label for="name">Ім'я:</label></td>
+        <td><input type="text" id="name" name="Name" size="24" required></td>
+      </tr>
+      <tr>
+        <td><label for="email">Електронна пошта:</label></td>
+        <td><input type="email" id="email" name="Email" size="24" required></td>
+      </tr>
+      <tr>
+        <td><label for="message">Повідомлення:</label></td>
+        <td><textarea id="message" name="Message" cols="40" rows="6" required></textarea></td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center">
+          <input type="submit" value="Відправити">
+          <input type="reset" value="Очистити">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
